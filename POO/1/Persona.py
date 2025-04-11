@@ -1,4 +1,5 @@
 class Persona:
+    #A
     def __init__(self, nombre, edad, ciudad):
         self.nombre = nombre
         self.edad = edad
