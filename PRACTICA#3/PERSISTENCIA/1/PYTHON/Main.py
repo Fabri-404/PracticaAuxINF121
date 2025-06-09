@@ -15,7 +15,7 @@ from Empleado import Empleado
 from ArchivoEmpleado import ArchivoEmpleado
 
 def main():
-    archivo = ArchivoEmpleado("empleados.txt")
+    archivo = ArchivoEmpleado("d:/UMSA/SEGUNDO SEMESTRE/PROGRAMACION II/PRACTICAS AUX/PRACTICA#3/PERSISTENCIA/1/PYTHON/empleados.txt")
     archivo.crearArchivo()
     
     # a)

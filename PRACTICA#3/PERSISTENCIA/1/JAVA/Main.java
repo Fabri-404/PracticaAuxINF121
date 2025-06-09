@@ -16,17 +16,17 @@ sueldo mayor al ingresado.
  */
 public class Main {
     public static void main(String[] args) {
-        ArchivoEmpleado archivo = new ArchivoEmpleado("empleados.txt");
+        ArchivoEmpleado archivo = new ArchivoEmpleado("d:/UMSA/SEGUNDO SEMESTRE/PROGRAMACION II/PRACTICAS AUX/PRACTICA#3/PERSISTENCIA/1/JAVA/empleados.txt");
         archivo.crearArchivo();
         
         // a)
-        Empleado empleado1 = new Empleado("Luisito", 30, 5000.0f);
-        Empleado empleado2 = new Empleado("Cepillin", 25, 6000.0f);
+        Empleado empleado1 = new Empleado("Juan", 30, 5000.0f);
+        Empleado empleado2 = new Empleado("Maria", 25, 6000.0f);
         archivo.guardarEmpleado(empleado1);
         archivo.guardarEmpleado(empleado2);
         
         // b)
-        Empleado encontrado = archivo.buscaEmpleado("Cepillin");
+        Empleado encontrado = archivo.buscaEmpleado("Maria");
         if (encontrado != null) {
             System.out.println(encontrado);
         } else {
